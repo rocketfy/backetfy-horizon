@@ -1,12 +1,12 @@
 {
-    "name": "laravel/horizon",
+    "name": "laravel/backetfy-horizon",
     "description": "Dashboard and code-driven configuration for Laravel queues.",
     "keywords": ["laravel", "queue"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
+            "name": "Rocketfy",
+            "email": "hola@rocketfy.es"
         }
     ],
     "require": {

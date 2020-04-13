@@ -2,6 +2,7 @@
 
 namespace Rocketfy\BacketfyHorizon\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Rocketfy\BacketfyHorizon\Horizon;
 
 class HomeController extends Controller

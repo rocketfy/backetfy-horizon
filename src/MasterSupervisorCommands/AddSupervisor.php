@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\MasterSupervisorCommands;
+namespace Rocketfy\BacketfyHorizon\MasterSupervisorCommands;
 
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\SupervisorProcess;
+use Rocketfy\BacketfyHorizon\MasterSupervisor;
+use Rocketfy\BacketfyHorizon\SupervisorOptions;
+use Rocketfy\BacketfyHorizon\SupervisorProcess;
 use Symfony\Component\Process\Process;
 
 class AddSupervisor
@@ -12,7 +12,7 @@ class AddSupervisor
     /**
      * Process the command.
      *
-     * @param  \Laravel\Horizon\MasterSupervisor  $master
+     * @param  \Rocketfy\BacketfyHorizon\MasterSupervisor  $master
      * @param  array  $options
      * @return void
      */
@@ -30,8 +30,8 @@ class AddSupervisor
     /**
      * Create the Symfony process instance.
      *
-     * @param  \Laravel\Horizon\MasterSupervisor  $master
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Rocketfy\BacketfyHorizon\MasterSupervisor  $master
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorOptions  $options
      * @return \Symfony\Component\Process\Process
      */
     protected function createProcess(MasterSupervisor $master, SupervisorOptions $options)

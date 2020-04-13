@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
-use Laravel\Horizon\JobId;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\JobId;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 
 class RedisJobIdTest extends IntegrationTest
 {

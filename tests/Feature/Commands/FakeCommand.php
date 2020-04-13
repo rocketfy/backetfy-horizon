@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Commands;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature\Commands;
 
-use Laravel\Horizon\Supervisor;
+use Rocketfy\BacketfyHorizon\Supervisor;
 
 class FakeCommand
 {

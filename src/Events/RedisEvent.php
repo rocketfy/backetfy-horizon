@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Rocketfy\BacketfyHorizon\Events;
 
-use Laravel\Horizon\JobPayload;
+use Rocketfy\BacketfyHorizon\JobPayload;
 
 class RedisEvent
 {

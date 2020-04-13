@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 use Closure;
 use Exception;

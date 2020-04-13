@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Controller;
+namespace Rocketfy\BacketfyHorizon\Tests\Controller;
 
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\WaitTimeCalculator;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\MetricsRepository;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\WaitTimeCalculator;
 use Mockery;
 
 class DashboardStatsControllerTest extends AbstractControllerTest

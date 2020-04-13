@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\BacketfyHorizon\Listeners;
 
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Events\JobReserved;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Events\JobReserved;
 
 class MarkJobAsReserved
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function __construct(JobRepository $jobs)
@@ -28,7 +28,7 @@ class MarkJobAsReserved
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobReserved  $event
+     * @param  \Rocketfy\BacketfyHorizon\Events\JobReserved  $event
      * @return void
      */
     public function handle(JobReserved $event)

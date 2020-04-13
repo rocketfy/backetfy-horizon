@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Support\Facades\Queue;
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Stopwatch;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\Contracts\MetricsRepository;
+use Rocketfy\BacketfyHorizon\Stopwatch;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 use Mockery;
 
 class MetricsTest extends IntegrationTest

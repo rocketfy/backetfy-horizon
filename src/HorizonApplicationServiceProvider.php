@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;

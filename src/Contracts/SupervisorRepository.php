@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Contracts;
+namespace Rocketfy\BacketfyHorizon\Contracts;
 
-use Laravel\Horizon\Supervisor;
+use Rocketfy\BacketfyHorizon\Supervisor;
 
 interface SupervisorRepository
 {
@@ -46,7 +46,7 @@ interface SupervisorRepository
     /**
      * Update the information about the given supervisor process.
      *
-     * @param  \Laravel\Horizon\Supervisor  $supervisor
+     * @param  \Rocketfy\BacketfyHorizon\Supervisor  $supervisor
      * @return void
      */
     public function update(Supervisor $supervisor);

@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Laravel\Facades\Config;
-use Laravel\Horizon\Horizon;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\Horizon;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 
 class RedisPrefixTest extends IntegrationTest
 {

@@ -1,24 +1,24 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 use Illuminate\Support\Arr;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
 
 class ProcessInspector
 {
     /**
      * The command executor.
      *
-     * @var \Laravel\Horizon\Exec
+     * @var \Rocketfy\BacketfyHorizon\Exec
      */
     public $exec;
 
     /**
      * Create a new process inspector instance.
      *
-     * @param  \Laravel\Horizon\Exec  $exec
+     * @param  \Rocketfy\BacketfyHorizon\Exec  $exec
      * @return void
      */
     public function __construct(Exec $exec)

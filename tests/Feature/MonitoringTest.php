@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Contracts\TagRepository;
-use Laravel\Horizon\Jobs\MonitorTag;
-use Laravel\Horizon\Jobs\StopMonitoringTag;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\Contracts\TagRepository;
+use Rocketfy\BacketfyHorizon\Jobs\MonitorTag;
+use Rocketfy\BacketfyHorizon\Jobs\StopMonitoringTag;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 
 class MonitoringTest extends IntegrationTest
 {

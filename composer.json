@@ -1,5 +1,5 @@
 {
-    "name": "laravel/backetfy-horizon",
+    "name": "rocketfy/backetfy-horizon",
     "description": "Dashboard and code-driven configuration for Laravel queues.",
     "keywords": ["laravel", "queue"],
     "license": "MIT",
@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Horizon\\": "src/"
+            "Rocketfy\\BacketfyHorizon\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\Horizon\\Tests\\": "tests/"
+            "Rocketfy\\BacketfyHorizon\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -48,10 +48,10 @@
         },
         "laravel": {
             "providers": [
-                "Laravel\\Horizon\\HorizonServiceProvider"
+                "Rocketfy\\BacketfyHorizon\\HorizonServiceProvider"
             ],
             "aliases": {
-                "Horizon": "Laravel\\Horizon\\Horizon"
+                "Horizon": "Rocketfy\\BacketfyHorizon\\Horizon"
             }
         }
     },

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
-use Laravel\Horizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
 
 class JobId
 {

@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\BacketfyHorizon\Listeners;
 
-use Laravel\Horizon\Contracts\TagRepository;
-use Laravel\Horizon\Events\JobPushed;
+use Rocketfy\BacketfyHorizon\Contracts\TagRepository;
+use Rocketfy\BacketfyHorizon\Events\JobPushed;
 
 class StoreMonitoredTags
 {
     /**
      * The tag repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\TagRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\TagRepository
      */
     public $tags;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function __construct(TagRepository $tags)
@@ -28,7 +28,7 @@ class StoreMonitoredTags
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobPushed  $event
+     * @param  \Rocketfy\BacketfyHorizon\Events\JobPushed  $event
      * @return void
      */
     public function handle(JobPushed $event)

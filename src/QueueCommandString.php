@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 class QueueCommandString
 {
     /**
      * Get the additional option string for the command.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorOptions  $options
      * @param  bool  $paused
      * @return string
      */

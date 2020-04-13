@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
-use Laravel\Horizon\ProvisioningPlan;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\MasterSupervisor;
+use Rocketfy\BacketfyHorizon\MasterSupervisorCommands\AddSupervisor;
+use Rocketfy\BacketfyHorizon\ProvisioningPlan;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 
 class ProvisioningPlanTest extends IntegrationTest
 {

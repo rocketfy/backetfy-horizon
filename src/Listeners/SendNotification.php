@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\BacketfyHorizon\Listeners;
 
 use Illuminate\Support\Facades\Notification;
-use Laravel\Horizon\Horizon;
-use Laravel\Horizon\Lock;
+use Rocketfy\BacketfyHorizon\Horizon;
+use Rocketfy\BacketfyHorizon\Lock;
 
 class SendNotification
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Queue\RedisQueue as BaseQueue;
 use Illuminate\Support\Str;
-use Laravel\Horizon\Events\JobDeleted;
-use Laravel\Horizon\Events\JobPushed;
-use Laravel\Horizon\Events\JobReleased;
-use Laravel\Horizon\Events\JobReserved;
-use Laravel\Horizon\Events\JobsMigrated;
+use Rocketfy\BacketfyHorizon\Events\JobDeleted;
+use Rocketfy\BacketfyHorizon\Events\JobPushed;
+use Rocketfy\BacketfyHorizon\Events\JobReleased;
+use Rocketfy\BacketfyHorizon\Events\JobReserved;
+use Rocketfy\BacketfyHorizon\Events\JobsMigrated;
 
 class RedisQueue extends BaseQueue
 {

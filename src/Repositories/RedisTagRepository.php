@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Rocketfy\BacketfyHorizon\Repositories;
 
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
-use Laravel\Horizon\Contracts\TagRepository;
+use Rocketfy\BacketfyHorizon\Contracts\TagRepository;
 
 class RedisTagRepository implements TagRepository
 {

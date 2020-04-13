@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\JobPayload;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\JobPayload;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 
 class JobRetrievalTest extends IntegrationTest
 {

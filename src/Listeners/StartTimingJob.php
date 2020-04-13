@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\BacketfyHorizon\Listeners;
 
-use Laravel\Horizon\Events\JobReserved;
-use Laravel\Horizon\Stopwatch;
+use Rocketfy\BacketfyHorizon\Events\JobReserved;
+use Rocketfy\BacketfyHorizon\Stopwatch;
 
 class StartTimingJob
 {
     /**
      * The stopwatch instance.
      *
-     * @var \Laravel\Horizon\Stopwatch
+     * @var \Rocketfy\BacketfyHorizon\Stopwatch
      */
     public $watch;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Stopwatch  $watch
+     * @param  \Rocketfy\BacketfyHorizon\Stopwatch  $watch
      * @return void
      */
     public function __construct(Stopwatch $watch)
@@ -28,7 +28,7 @@ class StartTimingJob
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobReserved  $event
+     * @param  \Rocketfy\BacketfyHorizon\Events\JobReserved  $event
      * @return void
      */
     public function handle(JobReserved $event)

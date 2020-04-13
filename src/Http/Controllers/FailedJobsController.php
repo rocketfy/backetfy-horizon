@@ -1,32 +1,32 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Rocketfy\BacketfyHorizon\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\TagRepository;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Contracts\TagRepository;
 
 class FailedJobsController extends Controller
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * The tag repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\TagRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\TagRepository
      */
     public $tags;
 
     /**
      * Create a new controller instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\JobRepository  $jobs
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function __construct(JobRepository $jobs, TagRepository $tags)

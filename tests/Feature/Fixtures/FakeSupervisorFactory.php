@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fixtures;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature\Fixtures;
 
-use Laravel\Horizon\SupervisorFactory;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\Tests\Feature\Fakes\SupervisorWithFakeMonitor;
+use Rocketfy\BacketfyHorizon\SupervisorFactory;
+use Rocketfy\BacketfyHorizon\SupervisorOptions;
+use Rocketfy\BacketfyHorizon\Tests\Feature\Fakes\SupervisorWithFakeMonitor;
 
 class FakeSupervisorFactory extends SupervisorFactory
 {

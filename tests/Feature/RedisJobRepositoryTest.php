@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Exception;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\JobPayload;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\JobPayload;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 use Throwable;
 
 class RedisJobRepositoryTest extends IntegrationTest

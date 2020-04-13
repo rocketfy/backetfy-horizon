@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 use Cake\Chronos\Chronos;
 use Closure;
@@ -47,7 +47,7 @@ class ProcessPool implements Countable
     /**
      * Create a new process pool instance.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorOptions  $options
      * @param  \Closure|null  $output
      * @return void
      */
@@ -131,7 +131,7 @@ class ProcessPool implements Countable
     /**
      * Mark the given worker process for termination.
      *
-     * @param  \Laravel\Horizon\WorkerProcess  $process
+     * @param  \Rocketfy\BacketfyHorizon\WorkerProcess  $process
      * @return void
      */
     public function markForTermination(WorkerProcess $process)
@@ -171,7 +171,7 @@ class ProcessPool implements Countable
     /**
      * Create a new process instance.
      *
-     * @return \Laravel\Horizon\WorkerProcess
+     * @return \Rocketfy\BacketfyHorizon\WorkerProcess
      */
     protected function createProcess()
     {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 use Closure;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
-use Laravel\Horizon\SupervisorCommands\Terminate;
+use Rocketfy\BacketfyHorizon\Contracts\HorizonCommandQueue;
+use Rocketfy\BacketfyHorizon\MasterSupervisorCommands\AddSupervisor;
+use Rocketfy\BacketfyHorizon\SupervisorCommands\Terminate;
 
 class SupervisorProcess extends WorkerProcess
 {
@@ -19,7 +19,7 @@ class SupervisorProcess extends WorkerProcess
     /**
      * The supervisor process options.
      *
-     * @var \Laravel\Horizon\SupervisorOptions
+     * @var \Rocketfy\BacketfyHorizon\SupervisorOptions
      */
     public $options;
 
@@ -44,7 +44,7 @@ class SupervisorProcess extends WorkerProcess
     /**
      * Create a new supervisor process instance.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorOptions  $options
      * @param  \Symfony\Component\Process\Process  $process
      * @param  \Closure|null  $output
      * @return void

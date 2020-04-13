@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Rocketfy\BacketfyHorizon\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

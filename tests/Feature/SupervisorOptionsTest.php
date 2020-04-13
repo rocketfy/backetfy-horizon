@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\SupervisorOptions;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 
 class SupervisorOptionsTest extends IntegrationTest
 {

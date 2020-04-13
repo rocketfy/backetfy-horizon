@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Rocketfy\BacketfyHorizon\Console;
 
 use Exception;
 use Illuminate\Console\Command;
-use Laravel\Horizon\SupervisorFactory;
-use Laravel\Horizon\SupervisorOptions;
+use Rocketfy\BacketfyHorizon\SupervisorFactory;
+use Rocketfy\BacketfyHorizon\SupervisorOptions;
 
 class SupervisorCommand extends Command
 {
@@ -47,7 +47,7 @@ class SupervisorCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \Laravel\Horizon\SupervisorFactory  $factory
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorFactory  $factory
      * @return int
      */
     public function handle(SupervisorFactory $factory)
@@ -70,7 +70,7 @@ class SupervisorCommand extends Command
     /**
      * Start the given supervisor.
      *
-     * @param  \Laravel\Horizon\Supervisor  $supervisor
+     * @param  \Rocketfy\BacketfyHorizon\Supervisor  $supervisor
      * @return void
      */
     protected function start($supervisor)
@@ -95,7 +95,7 @@ class SupervisorCommand extends Command
     /**
      * Get the supervisor options.
      *
-     * @return \Laravel\Horizon\SupervisorOptions
+     * @return \Rocketfy\BacketfyHorizon\SupervisorOptions
      */
     protected function supervisorOptions()
     {

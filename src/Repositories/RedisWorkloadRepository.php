@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Rocketfy\BacketfyHorizon\Repositories;
 
 use Illuminate\Contracts\Queue\Factory as QueueFactory;
 use Illuminate\Support\Str;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\WorkloadRepository;
-use Laravel\Horizon\WaitTimeCalculator;
+use Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\WorkloadRepository;
+use Rocketfy\BacketfyHorizon\WaitTimeCalculator;
 
 class RedisWorkloadRepository implements WorkloadRepository
 {
@@ -21,21 +21,21 @@ class RedisWorkloadRepository implements WorkloadRepository
     /**
      * The wait time calculator instance.
      *
-     * @var \Laravel\Horizon\WaitTimeCalculator
+     * @var \Rocketfy\BacketfyHorizon\WaitTimeCalculator
      */
     public $waitTime;
 
     /**
      * The master supervisor repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\MasterSupervisorRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository
      */
     private $masters;
 
     /**
      * The supervisor repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\SupervisorRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository
      */
     private $supervisors;
 
@@ -43,9 +43,9 @@ class RedisWorkloadRepository implements WorkloadRepository
      * Create a new repository instance.
      *
      * @param  \Illuminate\Contracts\Queue\Factory  $queue
-     * @param  \Laravel\Horizon\WaitTimeCalculator  $waitTime
-     * @param  \Laravel\Horizon\Contracts\MasterSupervisorRepository  $masters
-     * @param  \Laravel\Horizon\Contracts\SupervisorRepository  $supervisors
+     * @param  \Rocketfy\BacketfyHorizon\WaitTimeCalculator  $waitTime
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository  $masters
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository  $supervisors
      * @return void
      */
     public function __construct(QueueFactory $queue, WaitTimeCalculator $waitTime,

@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\BacketfyHorizon\Listeners;
 
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Events\JobsMigrated;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Events\JobsMigrated;
 
 class MarkJobsAsMigrated
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function __construct(JobRepository $jobs)
@@ -28,7 +28,7 @@ class MarkJobsAsMigrated
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobsMigrated  $event
+     * @param  \Rocketfy\BacketfyHorizon\Events\JobsMigrated  $event
      * @return void
      */
     public function handle(JobsMigrated $event)

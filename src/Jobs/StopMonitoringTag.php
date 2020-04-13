@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Jobs;
+namespace Rocketfy\BacketfyHorizon\Jobs;
 
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\TagRepository;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Contracts\TagRepository;
 
 class StopMonitoringTag
 {
@@ -28,8 +28,8 @@ class StopMonitoringTag
     /**
      * Execute the job.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\JobRepository  $jobs
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function handle(JobRepository $jobs, TagRepository $tags)

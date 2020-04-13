@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\BacketfyHorizon\Listeners;
 
-use Laravel\Horizon\Contracts\TagRepository;
-use Laravel\Horizon\Events\JobFailed;
+use Rocketfy\BacketfyHorizon\Contracts\TagRepository;
+use Rocketfy\BacketfyHorizon\Events\JobFailed;
 
 class StoreTagsForFailedJob
 {
     /**
      * The tag repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\TagRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\TagRepository
      */
     public $tags;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function __construct(TagRepository $tags)
@@ -28,7 +28,7 @@ class StoreTagsForFailedJob
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobFailed  $event
+     * @param  \Rocketfy\BacketfyHorizon\Events\JobFailed  $event
      * @return void
      */
     public function handle(JobFailed $event)

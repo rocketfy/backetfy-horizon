@@ -1,32 +1,32 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\BacketfyHorizon\Listeners;
 
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Events\JobDeleted;
-use Laravel\Horizon\Stopwatch;
+use Rocketfy\BacketfyHorizon\Contracts\MetricsRepository;
+use Rocketfy\BacketfyHorizon\Events\JobDeleted;
+use Rocketfy\BacketfyHorizon\Stopwatch;
 
 class UpdateJobMetrics
 {
     /**
      * The metrics repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\MetricsRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\MetricsRepository
      */
     public $metrics;
 
     /**
      * The stopwatch instance.
      *
-     * @var \Laravel\Horizon\Stopwatch
+     * @var \Rocketfy\BacketfyHorizon\Stopwatch
      */
     public $watch;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\MetricsRepository  $metrics
-     * @param  \Laravel\Horizon\Stopwatch  $watch
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\MetricsRepository  $metrics
+     * @param  \Rocketfy\BacketfyHorizon\Stopwatch  $watch
      * @return void
      */
     public function __construct(MetricsRepository $metrics, Stopwatch $watch)
@@ -38,7 +38,7 @@ class UpdateJobMetrics
     /**
      * Stop gathering metrics for a job.
      *
-     * @param  \Laravel\Horizon\Events\JobDeleted  $event
+     * @param  \Rocketfy\BacketfyHorizon\Events\JobDeleted  $event
      * @return void
      */
     public function handle(JobDeleted $event)

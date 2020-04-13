@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Illuminate\Contracts\Queue\Factory as QueueFactory;
-use Laravel\Horizon\AutoScaler;
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Supervisor;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\SystemProcessCounter;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\AutoScaler;
+use Rocketfy\BacketfyHorizon\Contracts\MetricsRepository;
+use Rocketfy\BacketfyHorizon\Supervisor;
+use Rocketfy\BacketfyHorizon\SupervisorOptions;
+use Rocketfy\BacketfyHorizon\SystemProcessCounter;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 use Mockery;
 
 class AutoScalerTest extends IntegrationTest

@@ -1,22 +1,22 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Rocketfy\BacketfyHorizon\Http\Controllers;
 
-use Laravel\Horizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
 
 class JobsController extends Controller
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Rocketfy\BacketfyHorizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * Create a new controller instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function __construct(JobRepository $jobs)

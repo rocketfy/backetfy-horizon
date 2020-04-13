@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Rocketfy\BacketfyHorizon\Repositories;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
 use Illuminate\Support\Arr;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\MasterSupervisor;
+use Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\MasterSupervisor;
 
 class RedisMasterSupervisorRepository implements MasterSupervisorRepository
 {
@@ -91,7 +91,7 @@ class RedisMasterSupervisorRepository implements MasterSupervisorRepository
     /**
      * Update the information about the given master supervisor.
      *
-     * @param  \Laravel\Horizon\MasterSupervisor  $master
+     * @param  \Rocketfy\BacketfyHorizon\MasterSupervisor  $master
      * @return void
      */
     public function update(MasterSupervisor $master)

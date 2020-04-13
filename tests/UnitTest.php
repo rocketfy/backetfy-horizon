@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests;
+namespace Rocketfy\BacketfyHorizon\Tests;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;

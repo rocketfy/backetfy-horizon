@@ -1,18 +1,18 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 use Cake\Chronos\Chronos;
 use Closure;
 use Exception;
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\Pausable;
-use Laravel\Horizon\Contracts\Restartable;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\Terminable;
-use Laravel\Horizon\Events\SupervisorLooped;
+use Rocketfy\BacketfyHorizon\Contracts\HorizonCommandQueue;
+use Rocketfy\BacketfyHorizon\Contracts\Pausable;
+use Rocketfy\BacketfyHorizon\Contracts\Restartable;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\Terminable;
+use Rocketfy\BacketfyHorizon\Events\SupervisorLooped;
 use Throwable;
 
 class Supervisor implements Pausable, Restartable, Terminable
@@ -29,7 +29,7 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * The SupervisorOptions that should be utilized.
      *
-     * @var \Laravel\Horizon\SupervisorOptions
+     * @var \Rocketfy\BacketfyHorizon\SupervisorOptions
      */
     public $options;
 
@@ -71,7 +71,7 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * Create a new supervisor instance.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorOptions  $options
      * @return void
      */
     public function __construct(SupervisorOptions $options)
@@ -124,8 +124,8 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * Create a new process pool with the given options.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
-     * @return \Laravel\Horizon\ProcessPool
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorOptions  $options
+     * @return \Rocketfy\BacketfyHorizon\ProcessPool
      */
     protected function createProcessPool(SupervisorOptions $options)
     {

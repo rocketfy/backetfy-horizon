@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\TagRepository;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Contracts\TagRepository;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 
 class FailedJobTest extends IntegrationTest
 {

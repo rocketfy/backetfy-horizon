@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Jobs\MonitorTag;
-use Laravel\Horizon\Jobs\RetryFailedJob;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\Jobs\MonitorTag;
+use Rocketfy\BacketfyHorizon\Jobs\RetryFailedJob;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
 
 class RetryJobTest extends IntegrationTest
 {

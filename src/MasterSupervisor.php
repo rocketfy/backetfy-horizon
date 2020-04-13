@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 use Cake\Chronos\Chronos;
 use Closure;
@@ -8,13 +8,13 @@ use Exception;
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\Str;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\Pausable;
-use Laravel\Horizon\Contracts\Restartable;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\Terminable;
-use Laravel\Horizon\Events\MasterSupervisorLooped;
+use Rocketfy\BacketfyHorizon\Contracts\HorizonCommandQueue;
+use Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\Pausable;
+use Rocketfy\BacketfyHorizon\Contracts\Restartable;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\Terminable;
+use Rocketfy\BacketfyHorizon\Events\MasterSupervisorLooped;
 use Throwable;
 
 class MasterSupervisor implements Pausable, Restartable, Terminable

@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Rocketfy\BacketfyHorizon\Console;
 
 use Illuminate\Console\Command;
-use Laravel\Horizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
 
 class SupervisorsCommand extends Command
 {
@@ -24,7 +24,7 @@ class SupervisorsCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \Laravel\Horizon\Contracts\SupervisorRepository  $supervisors
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository  $supervisors
      * @return void
      */
     public function handle(SupervisorRepository $supervisors)

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Rocketfy\BacketfyHorizon\Events;
 
-use Laravel\Horizon\Notifications\LongWaitDetected as LongWaitDetectedNotification;
+use Rocketfy\BacketfyHorizon\Notifications\LongWaitDetected as LongWaitDetectedNotification;
 
 class LongWaitDetected
 {
@@ -45,7 +45,7 @@ class LongWaitDetected
     /**
      * Get a notification representation of the event.
      *
-     * @return \Laravel\Horizon\Notifications\LongWaitDetected
+     * @return \Rocketfy\BacketfyHorizon\Notifications\LongWaitDetected
      */
     public function toNotification()
     {

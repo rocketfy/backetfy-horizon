@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Rocketfy\BacketfyHorizon\Repositories;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
-use Laravel\Horizon\Contracts\ProcessRepository;
+use Rocketfy\BacketfyHorizon\Contracts\ProcessRepository;
 
 class RedisProcessRepository implements ProcessRepository
 {

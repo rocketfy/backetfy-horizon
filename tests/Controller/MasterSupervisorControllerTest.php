@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Controller;
+namespace Rocketfy\BacketfyHorizon\Tests\Controller;
 
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\Supervisor;
-use Laravel\Horizon\SupervisorOptions;
+use Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\MasterSupervisor;
+use Rocketfy\BacketfyHorizon\Supervisor;
+use Rocketfy\BacketfyHorizon\SupervisorOptions;
 
 class MasterSupervisorControllerTest extends AbstractControllerTest
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Unit;
+namespace Rocketfy\BacketfyHorizon\Tests\Unit;
 
-use Laravel\Horizon\Supervisor;
-use Laravel\Horizon\SupervisorCommands\Scale;
-use Laravel\Horizon\Tests\UnitTest;
+use Rocketfy\BacketfyHorizon\Supervisor;
+use Rocketfy\BacketfyHorizon\SupervisorCommands\Scale;
+use Rocketfy\BacketfyHorizon\Tests\UnitTest;
 use Mockery;
 
 class ScaleCommandTest extends UnitTest

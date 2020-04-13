@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\BacketfyHorizon;
 
 class SupervisorFactory
 {
     /**
      * Create a new supervisor instance.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
-     * @return \Laravel\Horizon\Supervisor
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorOptions  $options
+     * @return \Rocketfy\BacketfyHorizon\Supervisor
      */
     public function make(SupervisorOptions $options)
     {

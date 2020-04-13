@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\SupervisorCommands;
+namespace Rocketfy\BacketfyHorizon\SupervisorCommands;
 
-use Laravel\Horizon\Supervisor;
+use Rocketfy\BacketfyHorizon\Supervisor;
 
 class Scale
 {
     /**
      * Process the command.
      *
-     * @param  \Laravel\Horizon\Supervisor  $supervisor
+     * @param  \Rocketfy\BacketfyHorizon\Supervisor  $supervisor
      * @param  array  $options
      * @return void
      */

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Rocketfy\BacketfyHorizon\Http\Controllers;
 
-use Laravel\Horizon\Horizon;
+use Rocketfy\BacketfyHorizon\Horizon;
 
 class HomeController extends Controller
 {

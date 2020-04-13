@@ -1,17 +1,17 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Rocketfy\BacketfyHorizon\Http\Controllers;
 
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
 
 class MasterSupervisorController extends Controller
 {
     /**
      * Get all of the master supervisors and their underlying supervisors.
      *
-     * @param  \Laravel\Horizon\Contracts\MasterSupervisorRepository  $masters
-     * @param  \Laravel\Horizon\Contracts\SupervisorRepository  $supervisors
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\MasterSupervisorRepository  $masters
+     * @param  \Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository  $supervisors
      * @return \Illuminate\Support\Collection
      */
     public function index(MasterSupervisorRepository $masters,

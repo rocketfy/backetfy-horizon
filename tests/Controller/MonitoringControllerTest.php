@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Controller;
+namespace Rocketfy\BacketfyHorizon\Tests\Controller;
 
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\TagRepository;
-use Laravel\Horizon\JobPayload;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Contracts\TagRepository;
+use Rocketfy\BacketfyHorizon\JobPayload;
 use Mockery;
 
 class MonitoringControllerTest extends AbstractControllerTest

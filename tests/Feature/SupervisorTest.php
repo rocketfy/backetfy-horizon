@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature;
 
 use Cake\Chronos\Chronos;
 use Exception;
@@ -8,19 +8,19 @@ use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\AutoScaler;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Events\WorkerProcessRestarting;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\PhpBinary;
-use Laravel\Horizon\Supervisor;
-use Laravel\Horizon\SupervisorCommands\Scale;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\SystemProcessCounter;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\WorkerCommandString;
+use Rocketfy\BacketfyHorizon\AutoScaler;
+use Rocketfy\BacketfyHorizon\Contracts\HorizonCommandQueue;
+use Rocketfy\BacketfyHorizon\Contracts\JobRepository;
+use Rocketfy\BacketfyHorizon\Contracts\SupervisorRepository;
+use Rocketfy\BacketfyHorizon\Events\WorkerProcessRestarting;
+use Rocketfy\BacketfyHorizon\MasterSupervisor;
+use Rocketfy\BacketfyHorizon\PhpBinary;
+use Rocketfy\BacketfyHorizon\Supervisor;
+use Rocketfy\BacketfyHorizon\SupervisorCommands\Scale;
+use Rocketfy\BacketfyHorizon\SupervisorOptions;
+use Rocketfy\BacketfyHorizon\SystemProcessCounter;
+use Rocketfy\BacketfyHorizon\Tests\IntegrationTest;
+use Rocketfy\BacketfyHorizon\WorkerCommandString;
 use Mockery;
 
 class SupervisorTest extends IntegrationTest

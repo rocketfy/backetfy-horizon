@@ -1,22 +1,22 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Rocketfy\BacketfyHorizon\Events;
 
-use Laravel\Horizon\SupervisorProcess;
+use Rocketfy\BacketfyHorizon\SupervisorProcess;
 
 class SupervisorProcessRestarting
 {
     /**
      * The supervisor process instance.
      *
-     * @var \Laravel\Horizon\SupervisorProcess
+     * @var \Rocketfy\BacketfyHorizon\SupervisorProcess
      */
     public $process;
 
     /**
      * Create a new event instance.
      *
-     * @param  \Laravel\Horizon\SupervisorProcess  $process
+     * @param  \Rocketfy\BacketfyHorizon\SupervisorProcess  $process
      * @return void
      */
     public function __construct(SupervisorProcess $process)

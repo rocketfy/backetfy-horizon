@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Jobs;
+namespace Rocketfy\BacketfyHorizon\Tests\Feature\Jobs;
 
 class LegacyJob
 {

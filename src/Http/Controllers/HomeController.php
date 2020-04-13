@@ -13,20 +13,6 @@ class HomeController extends Controller
         $this->menu = [];
         $this->active_item = 'horizon';
         $this->active_item_config = '';
-
-        foreach (DB::select('SELECT table_name, icon FROM backetfy_configurations WHERE view AND NOT config AND NOT invoice AND NOT web AND table_name NOT IN ("users", "configs")') as $table) {
-            $newdata =  array(
-                'table' => Str::slug($table->table_name),
-                'icon' => $table->icon
-            );
-            array_push($this->menu, $newdata);
-        }
-
-        $newdata =  array(
-            'table' => 'horizon',
-            'icon' => config('horizon.menu-icon')
-        );
-        array_push($this->menu, $newdata);
     }
     /**
      * Single page application catch-all route.
@@ -40,7 +26,6 @@ class HomeController extends Controller
             'horizonScriptVariables' => Horizon::scriptVariables(),
             'assetsAreCurrent' => Horizon::assetsAreCurrent(),
             'active_item' => 'horizon',
-            'menu' => $menu,
             'nocard' => 1,
         ]);
     }

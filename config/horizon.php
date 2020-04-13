@@ -22,9 +22,7 @@ return [
     | Horizon Menu Icon
     |--------------------------------------------------------------------------
     |
-    | This is the subdomain where Horizon will be accessible from. If this
-    | setting is null, Horizon will reside under the same domain as the
-    | application. Otherwise, this value will serve as the subdomain.
+    | This is icon that will be shown in the sidebar
     |
     */
 
@@ -41,7 +39,7 @@ return [
     |
     */
 
-    'path' => 'backetfy/horizon',
+    'path' => 'backet/horizon',
 
     /*
     |--------------------------------------------------------------------------
